@@ -47,7 +47,7 @@ To ensure the model was robust and unbiased, I implemented the following pipelin
 
 > **Strategic Note:** I prioritized **Recall** over Accuracy. In churn prediction, it is more expensive to "miss" a customer who is about to leave (False Negative) than to accidentally offer a discount to a loyal one (False Positive).
 
-<img src="Logistic%20regression.png" width="500" alt="Precision-Recall Curve">
+<img src="Logistic%20regression.png" width="700" alt="Precision-Recall Curve">
 
 ---
 
@@ -61,7 +61,7 @@ Instead of a binary "Yes/No" output, I developed a **Risk Level Framework** to h
 ---
 ## 👨‍💻 Author:
 <i>Eldho Joshy</i>
-* **LinkedIn :https://www.linkedin.com/in/eldho-joshy** 
+* **LinkedIn :https: www.linkedin.com/in/eldho-joshy** 
 
 ---
 If you find this project helpful, feel free to ⭐ the repository!
