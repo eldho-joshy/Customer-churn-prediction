@@ -60,7 +60,7 @@ Instead of a binary "Yes/No" output, I developed a **Risk Level Framework** to h
 
 ---
 ## 👨‍💻 Author:
-*Eldho Joshy*
+<i>Eldho Joshy</i>
 * **LinkedIn :https://www.linkedin.com/in/eldho-joshy** 
 
 ---
