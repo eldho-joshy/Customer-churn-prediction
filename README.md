@@ -61,8 +61,7 @@ Instead of a binary "Yes/No" output, I developed a **Risk Level Framework** to h
 ---
 
 ## 👨‍💻 About Me
-**Eldho Joshy** *Aspiring Data Scientist & BCA Student (AI & Data Science)*
-
+**Eldho Joshy**
 * **LinkedIn:https://www.linkedin.com/in/eldho-joshy** 
 
 ---
