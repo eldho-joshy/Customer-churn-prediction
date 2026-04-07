@@ -1,7 +1,7 @@
 # 📉 Telco Customer Churn: Predictive Analysis & Retention Strategy
-### **A Data Science Project on Predictive Customer Retention**
+### **A Machine Learning Approach to Increasing Customer Loyalty**
 
-Hi 👋 I'm **Eldho Joshy**, a Data Science student. This project focuses on understanding the underlying patterns of customer behavior and building a machine learning pipeline to predict churn before it happens.
+Hi 👋 I'm **Eldho Joshy**, a Data Science student. This project focuses on identifying the underlying patterns of customer behavior and building a machine learning pipeline to predict churn before it happens.
 
 ---
 
@@ -21,18 +21,19 @@ Before building the models, I performed deep EDA to understand the "signals" of 
 * **Service Patterns:** Surprisingly, Fiber Optic users show higher churn than DSL users, suggesting potential service-specific friction.
 * **Loyalty Factor:** Customers who stay past the 2-year mark become exponentially more stable.
 
-<img width="1397" height="796" alt="dashboard-preview" src="https://github.com/eldho-joshy/customer-churn-prediction/blob/be5747a522ef5f1f476dbf7a36728f9190d97fbe/Visual%20output.png" />
-
+<img src="Visual%20output.png" width="1000" alt="EDA Dashboard">
 
 ---
 
 ## 🛠️ Technical Approach
 To ensure the model was robust and unbiased, I implemented the following pipeline:
 
-1.  **Data Cleaning:** Handled missing values in `Total Charges` and removed non-predictive identifiers.
-2.  **Feature Engineering:** Applied **One-Hot Encoding** for categorical variables and **StandardScaler** for numerical normalization.
-3.  **Handling Imbalance:** Used `class_weight='balanced'` and **Stratified Sampling** to ensure the model doesn't ignore the minority "Churn" class.
-4.  **Model Selection:** Evaluated **Logistic Regression** (for interpretability) and **Random Forest** (for capturing non-linear patterns).
+1. **Data Cleaning:** Handled missing values in `Total Charges` and removed non-predictive identifiers (Zip Codes, IDs).
+2. **Feature Engineering:** Applied **One-Hot Encoding** for categorical variables and **StandardScaler** for numerical normalization.
+3. **Handling Imbalance:** Used `class_weight='balanced'` and **Stratified Sampling** to ensure the model doesn't ignore the minority "Churn" class.
+4. **Model Selection:** Evaluated **Logistic Regression** (for interpretability) and **Random Forest** (for capturing non-linear patterns).
+
+<img src="Random%20Forest.png" width="900" alt="Feature Importance">
 
 ---
 
@@ -46,22 +47,21 @@ To ensure the model was robust and unbiased, I implemented the following pipelin
 
 > **Strategic Note:** I prioritized **Recall** over Accuracy. In churn prediction, it is more expensive to "miss" a customer who is about to leave (False Negative) than to accidentally offer a discount to a loyal one (False Positive).
 
-
+<img src="Logistic%20regression.png" width="500" alt="Precision-Recall Curve">
 
 ---
 
 ## 🚀 Business Application: Risk Segmentation
 Instead of a binary "Yes/No" output, I developed a **Risk Level Framework** to help marketing teams prioritize their budget:
 
-* 🔴 **High Risk (>70%)** → Immediate retention offers (discounts, personalized outreach).
-* 🟡 **Medium Risk (30–70%)** → Engagement & feedback surveys to improve satisfaction.
-* 🟢 **Low Risk (<30%)** → Standard service and upselling opportunities.
+* 🔴 **High Risk (>70% prob)** → Immediate retention offers (discounts, personalized outreach).
+* 🟡 **Medium Risk (30–70% prob)** → Engagement & feedback surveys to improve satisfaction.
+* 🟢 **Low Risk (<30% prob)** → Standard service and upselling opportunities.
 
 ---
-
 ## 👨‍💻 Author:
-**Eldho Joshy**
+*Eldho Joshy*
 * **LinkedIn :https://www.linkedin.com/in/eldho-joshy** 
 
 ---
-*If you find this project helpful, feel free to ⭐ the repository!*
+If you find this project helpful, feel free to ⭐ the repository!
